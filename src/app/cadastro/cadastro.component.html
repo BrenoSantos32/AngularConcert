@@ -1,0 +1,81 @@
+<body>
+    
+    <ul>
+      <li><a routerLink="">Sair</a></li>
+      <li><a routerLink="/cadastro">Crud</a></li>
+      <li><a routerLink="/lista">Crud RactiveForms</a></li>
+    </ul>
+
+    <div class="container"> 
+        <div class="box"> 
+        <form action="#" method="post">    
+                <fieldset>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="snome">Sobrenome</label>
+                            <input type="text" id="snome" name="snome" style="width: 10em" value="">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <label>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 20em" value="">
+                    </div>
+                    <div class="campo">
+                        <label>Nascimento</label>
+                        <input id="date" type="date" value="2021-04-05" style="width: 10em">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
+                    </div>
+    
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="PR">MG</option>
+                                <option value="PR">SC</option>
+                                <option value="PR">RJ</option>
+                                <option value="PR">SP</option>
+                            </select>
+                        </div>
+                    </fieldset>
+    
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                    </div>
+    
+                    <div class="campo">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="1"> aceito os termos.
+                        </label>
+                    </div>
+                    <div class="div-button">
+                        <button class="button" (click)="handleSuccess()" type="submit" name="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+    
+        </div>
+    </div>
+</body>    
+
